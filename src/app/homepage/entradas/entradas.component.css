@@ -1,0 +1,63 @@
+:host,
+.tickets-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.ticket {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 1% 6px;
+}
+.sold-out{
+    width: 70% !important;
+}
+.ticket img {
+    width: 100%;
+    object-fit: cover;
+}
+.text-box{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: antiquewhite;
+    opacity: 0;
+    transition: opacity 0.75s ease;
+}
+.text-box a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.comprar{
+    display: flex;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: medium;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: antiquewhite;
+    border: solid;
+    border-width: thin;
+    border-color: antiquewhite;
+    padding: 0 3%;
+}
+.entradas-box{
+    display: flex;
+}
+.ticket:hover .text-box {
+    opacity: 1;
+}

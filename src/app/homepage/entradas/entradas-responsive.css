@@ -1,0 +1,18 @@
+/*@media only screen and (max-width: 1024px) {
+    .entradas-box{display: none;}
+}
+@media only screen and (min-width: 1024px) {
+    .entradas-box{display: flex;}
+    .carousel-container{display: none;}
+}*/
+@media only screen and (min-width: 1000px) {
+    /*:host,
+    .carousel-container{
+        display: flex;
+        max-width: 100%;
+        width: 86%;
+    }*/
+    .comprar{
+        font-size: 2rem;
+    }
+}

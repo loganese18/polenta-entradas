@@ -1,0 +1,24 @@
+<div class="puestas-container">
+    <div class="puestas-text">
+        <h1 id="puestas-header">PUESTAS</h1>
+        <p>La experiencia Polenta* comienza desde el momento en que entrás hasta el segundo en que te vas. Por eso la
+            puesta
+            de luces, pantallas y visuales en la fiesta es la gran protagonista. Para cada edición cambiamos como se
+            presenta la fiesta. Shows de lasers, pantallas gigantes, luces led y visuales originales reciben a la gente
+            al
+            mundo&nbsp;Polenta*.</p>
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let image of (isMobileScreen ? puestas_mobile : puestas_desktop)">
+                <img class="imagen-puestas" [src]="image" alt="Imágen Puestas Polenta*" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <div class="swiper-pagination">
+            <span class="swiper-pagination-bullet"></span>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="menu-box">
+    <button class="menu-button" (click)="openMenu()" style="border: none; background: none;">
+        <mat-icon style="color: #523cf2;">menu</mat-icon>
+    </button>
+    <div class="menu" #menu>
+        <div class="menu-header">
+            <div class="menu-logo-box">
+                <a href="">
+                    <img src="./assets/diseño/hola-polenta-logo.png" alt="Logo Polenta" />
+                </a>
+            </div>
+        </div>
+        <div class="menu-body">
+            <nav>
+                <ol>
+                    <hr />
+                    <li>
+                        <a class="menu-list-item" href="#entradas" (click)="closeMenu()">Tickets</a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a class="menu-list-item" href="#momentos-polenta" (click)="closeMenu()">Momentos
+                            Polenta*</a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a class="menu-list-item" href="#puestas-header" (click)="closeMenu()">Puestas</a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a class="menu-list-item info" href="#info-polenta" (click)="closeMenu()">¿Que C#&% es la
+                            Polenta*?</a>
+                    </li>
+                    <hr />
+                    <li>
+                        <div class="menu-icons-box">
+                            <a class="menu-icons ig iconos" href="https://www.instagram.com/polenta.polenta"
+                                target="_blank" rel="noopener external">
+                                <img src="./assets/redes/instagram-logo.png" alt="Logo Instagram" loading="lazy" />
+                            </a>
+                            <a class="menu-icons yt iconos" href="https://www.youtube.com/@polenta.polenta"
+                                target="_blank" rel="noopener external">
+                                <img src="./assets/redes/youtube-logo.png" alt="Logo Youtube" loading="lazy" />
+                            </a>
+                            <a class="menu-icons spotify iconos" href="https://spotify.link/ffe57EUw9Ab" target="_blank"
+                                rel="noopener external">
+                                <img src="./assets/redes/spotify-logo.png" alt="Logo Spotify" loading="lazy" />
+                            </a>
+                        </div>
+                    </li>
+                    <hr />
+                </ol>
+            </nav>
+            <div class="colapse-button-box">
+                <button (click)="collapseMenu()"
+                    style="border: none; background: none; color: aliceblue; font-size: 40px;">
+                    <mat-icon>expand_less</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
